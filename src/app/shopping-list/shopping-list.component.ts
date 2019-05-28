@@ -23,6 +23,10 @@ export class ShoppingListComponent implements OnInit {
       )
   }
 
+  onEdit(i: number){
+
+  }
+
   // addToIngArray(inputIng : Ingredient){
   //     this.ingredient.push(inputIng);
   // }

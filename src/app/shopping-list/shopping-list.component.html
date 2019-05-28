@@ -8,8 +8,9 @@
 			<a 
 			class = "list-group-item" 
 			style = "cursor:pointer"
-			*ngFor = "let x of ingredient"
-			>{{ x.name }}   ({{ x.amount }})</a>
+			*ngFor = "let x of ingredient; let i = index"
+      (click) = "onEdit(i)"
+      >{{ x.name }}   ({{ x.amount }})</a>
 		</ul>
 	</div>
 </div>
