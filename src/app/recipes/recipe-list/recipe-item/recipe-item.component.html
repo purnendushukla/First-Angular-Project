@@ -1,0 +1,19 @@
+  <a
+    style="curson: pointer"
+    class="list-group-item clearfix"
+    [routerLink]= "[index]"
+    routerLinkActive="active"
+  >
+<!--      (click) = "recipeItmSelected()">-->
+      <div class="float-left">
+        <h4 class="list-group-item-heading">{{ recipeItm.name }}</h4>
+        <p class="list-group-item-text">{{ recipeItm.description }}</p>
+      </div>
+      <span class="float-right">
+        <img
+          [src]="recipeItm.imagePath"
+          alt="{{ recipeItm.name }}"
+          class="img-responsive"
+          style="max-height: 50px;">
+      </span>
+    </a>
