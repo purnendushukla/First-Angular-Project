@@ -9,7 +9,7 @@ import {ShoppingListService} from './shopping-list.service';
 })
 export class ShoppingListComponent implements OnInit {
 
-	ingredient : Ingredient[];
+	ingredient: Ingredient[];
 
   constructor(private slService: ShoppingListService) { }
 
@@ -20,10 +20,10 @@ export class ShoppingListComponent implements OnInit {
         (ingredients: Ingredient[]) => {
             this.ingredient = ingredients;
         }
-      )
+      );
   }
 
-  onEdit(index: number){
+  onEdit(index: number) {
     this.slService.startedEditing.next(index);
   }
 
