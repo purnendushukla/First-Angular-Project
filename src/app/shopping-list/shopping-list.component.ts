@@ -23,8 +23,8 @@ export class ShoppingListComponent implements OnInit {
       )
   }
 
-  onEdit(i: number){
-
+  onEdit(index: number){
+    this.slService.startedEditing.next(index);
   }
 
   // addToIngArray(inputIng : Ingredient){
