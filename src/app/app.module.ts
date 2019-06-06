@@ -43,6 +43,17 @@ import {DataStorageService} from './shared/data-storage.service';
     AppRoutingModule
   ],
   providers: [ShoppingListService, RecipeService,DataStorageService],
-  bootstrap: [AppComponent]
+  bootstrap: [
+    AppComponent,
+    HeaderComponent,
+    RecipesComponent,
+    RecipeListComponent,
+    RecipeDetailsComponent,
+    RecipeItemComponent,
+    ShoppingListComponent,
+    ShoppingListEditComponent,
+    RecipeStartComponent,
+    RecipeEditComponent
+  ]
 })
 export class AppModule { }
